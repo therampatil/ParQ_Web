@@ -1,0 +1,7 @@
+[build]
+  command = "pnpm run build"
+  publish = ".next"
+
+# The Netlify Next.js cache plugin ensures faster subsequent builds
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

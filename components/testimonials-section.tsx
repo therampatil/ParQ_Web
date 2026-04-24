@@ -9,8 +9,8 @@ const testimonials = [
     role: "Homeowner",
     location: "San Francisco, CA",
     image: "SM",
-    content: "I was skeptical at first, but ParQ has been earning me over $300 a month from my unused driveway spot. The setup was incredibly easy!",
-    earnings: "$312/mo",
+    content: "I was skeptical at first, but ParQ has been earning me over ₹300 a month from my unused driveway spot. The setup was incredibly easy!",
+    earnings: "₹312/mo",
     rating: 5,
   },
   {
@@ -19,7 +19,7 @@ const testimonials = [
     location: "Seattle, WA",
     image: "JC",
     content: "As someone who manages multiple properties, ParQ has been a game-changer. The analytics dashboard helps me optimize pricing across all my spots.",
-    earnings: "$850/mo",
+    earnings: "₹850/mo",
     rating: 5,
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     location: "Austin, TX",
     image: "ER",
     content: "I work from home and rarely use my assigned parking spot. Now it pays for half my car payment. Love the automatic payments!",
-    earnings: "$178/mo",
+    earnings: "₹178/mo",
     rating: 5,
   },
   {
@@ -37,7 +37,7 @@ const testimonials = [
     location: "Denver, CO",
     image: "MT",
     content: "We installed ParQ devices in our business parking lot for after-hours use. Extra revenue stream we never thought possible.",
-    earnings: "$1,200/mo",
+    earnings: "₹1,200/mo",
     rating: 5,
   },
 ]
@@ -141,7 +141,7 @@ export function TestimonialsSection() {
         <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             { value: "10,000+", label: "Active Users" },
-            { value: "$2.4M+", label: "Paid Out" },
+            { value: "₹2.4M+", label: "Paid Out" },
             { value: "4.9/5", label: "Average Rating" },
             { value: "50+", label: "Cities" },
           ].map((stat, index) => (

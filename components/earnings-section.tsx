@@ -175,7 +175,7 @@ export function EarningsSection() {
                   <div>
                     <p className="text-background/60 mb-1">Yearly Earnings</p>
                     <p className="text-4xl font-bold">
-                      <AnimatedNumber value={yearlyEarnings} prefix="$" />
+                      <AnimatedNumber value={yearlyEarnings} prefix="₹" />
                     </p>
                   </div>
                   <div className="w-14 h-14 rounded-xl bg-green-500/20 flex items-center justify-center">

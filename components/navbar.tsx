@@ -22,6 +22,7 @@ export function Navbar() {
 
   const isAuthority = pathname === "/authority";
   const isDriver = pathname === "/driver";
+  const isService = pathname === "/service";
 
   return (
     <nav
@@ -69,12 +70,20 @@ export function Navbar() {
                 ? "For Property Owners"
                 : isDriver
                   ? "For Drivers"
-                  : "It is more than just parking"}
+                  : isService
+                    ? "Our Services"
+                    : "It is more than just parking"}
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6 lg:gap-8">
+            <Link
+              href="/service"
+              className={`text-sm font-medium transition-colors hover:text-primary ${isService ? "text-primary" : "text-muted-foreground"}`}
+            >
+              Services
+            </Link>
             <Link
               href="/authority"
               className={`text-sm font-medium transition-colors hover:text-primary ${isAuthority ? "text-primary" : "text-muted-foreground"}`}
@@ -117,6 +126,13 @@ export function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-background border-b border-border">
           <div className="px-4 pt-2 pb-6 space-y-4">
+            <Link
+              href="/service"
+              className={`block px-3 py-2 text-base font-medium rounded-md ${isService ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-primary hover:bg-muted"}`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Services
+            </Link>
             <Link
               href="/authority"
               className={`block px-3 py-2 text-base font-medium rounded-md ${isAuthority ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-primary hover:bg-muted"}`}

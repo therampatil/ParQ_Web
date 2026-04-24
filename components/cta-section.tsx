@@ -53,7 +53,7 @@ export function CTASection() {
                   size="lg"
                   className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-lg group"
                 >
-                  Order Now - $149
+                  Order Now - ₹149
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <div className="text-sm text-background/60">

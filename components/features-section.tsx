@@ -96,7 +96,7 @@ export function FeaturesSection() {
                     {/* Stats card */}
                     <div className="bg-primary rounded-lg p-3 mb-2">
                       <p className="text-[10px] text-primary-foreground/80">This Month</p>
-                      <p className="text-lg font-bold text-primary-foreground">$247.50</p>
+                      <p className="text-lg font-bold text-primary-foreground">₹247.50</p>
                     </div>
                     
                     {/* Quick stats */}
@@ -122,7 +122,7 @@ export function FeaturesSection() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-foreground">Payment Received</p>
-                    <p className="text-xs text-muted-foreground">+$8.50 from parking</p>
+                    <p className="text-xs text-muted-foreground">+₹8.50 from parking</p>
                   </div>
                 </div>
               </div>
